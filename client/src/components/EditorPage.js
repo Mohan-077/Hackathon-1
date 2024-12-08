@@ -114,7 +114,7 @@ function EditorPage() {
   const runCode = async () => {
     setIsCompiling(true);
     try {
-      const response = await axios.post("http://localhost:5000/compile", {
+      const response = await axios.post("https://hackathon-1-4vrq.onrender.com/compile", {
         code: codeRef.current,
         language: selectedLanguage,
       });
